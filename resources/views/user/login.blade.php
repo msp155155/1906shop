@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="/css/fakeLoader.css">
 	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/style.css">
-
-	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<link rel="shortcut icon" href="/img/favicon.png">
 
 </head>
 <body>
@@ -41,14 +41,14 @@
 	<div class="side-nav-panel-right">
 		<ul id="slide-out-right" class="side-nav side-nav-panel collapsible">
 			<li class="profil">
-				<img src="/img/profile.jpg" alt="">
+				<img src="img/profile.jpg" alt="">
 				<h2>John Doe</h2>
 			</li>
 			<li><a href="setting.html"><i class="fa fa-cog"></i>Settings</a></li>
 			<li><a href="about-us.html"><i class="fa fa-user"></i>About Us</a></li>
 			<li><a href="contact.html"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
 			<li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
-			<li><a href="register.blade.php"><i class="fa fa-user-plus"></i>Register</a></li>
+			<li><a href="register.html"><i class="fa fa-user-plus"></i>Register</a></li>
 		</ul>
 	</div>
 	<!-- end side nav right-->
@@ -151,7 +151,7 @@
 				</div>
 				<div class="row">
 					<div class="col s4">
-						<a href="blog.html" class="button-link">
+						<a href="blog.html" class="button-link">	
 							<div class="menu-link">
 								<div class="icon">
 									<i class="fa fa-bold"></i>
@@ -161,7 +161,7 @@
 						</a>
 					</div>
 					<div class="col s4">
-						<a href="blog-single.html" class="button-link">
+						<a href="blog-single.html" class="button-link">	
 							<div class="menu-link">
 								<div class="icon">
 									<i class="fa fa-file-text-o"></i>
@@ -235,7 +235,7 @@
 						</a>
 					</div>
 					<div class="col s4">
-						<a href="register.blade.php" class="button-link">
+						<a href="register.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
 									<i class="fa fa-user-plus"></i>
@@ -262,7 +262,7 @@
 						<div class="cart-1">
 							<div class="row">
 								<div class="col s5">
-									<img src="/img/cart-menu1.png" alt="">
+									<img src="img/cart-menu1.png" alt="">
 								</div>
 								<div class="col s7">
 									<h5><a href="">Fashion Men's</a></h5>
@@ -297,7 +297,7 @@
 						<div class="cart-2">
 							<div class="row">
 								<div class="col s5">
-									<img src="/img/cart-menu2.png" alt="">
+									<img src="img/cart-menu2.png" alt="">
 								</div>
 								<div class="col s7">
 									<h5><a href="">Fashion Men's</a></h5>
@@ -362,39 +362,35 @@
 	</div>
 	<!-- end cart menu -->
 
-
-	<!-- register -->
+	
+	<!-- login -->
 	<div class="pages section">
 		<div class="container">
 			<div class="pages-head">
-				<h3>REGISTER</h3>
+				<h3>登录</h3>
 			</div>
-			<div class="register">
+			<div class="login">
 				<div class="row">
-					<form class="col s12" method="post" action= "{{url('doreg')}}">
-                        @csrf
+					<form class="col s12" method="post" action= "{{url('loginDo')}}">
 						<div class="input-field">
-							<input type="text" class="validate" placeholder="NAME" name="user_name" required>
+							<input type="text" class="validate" placeholder="邮箱/手机号/用户名" required name="user">
 						</div>
 						<div class="input-field">
-							<input type="email" placeholder="EMAIL" class="validate" name="user_email" required>
+							<input type="password" class="validate" placeholder="密码" required name="pwd">
 						</div>
-						<div class="input-field">
-							<input type="password" placeholder="PASSWORD" class="validate" name="user_password" required>
-						</div>
-                        <button class="btn button-default reg">REGISTER</button>
+						<a href=""><h6>忘记密码</h6></a>
+                        <button type="submit" class="btn button-default">登录</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end register -->
-
-
+	<!-- end login -->
+	
 	<!-- loader -->
 	<div id="fakeLoader"></div>
 	<!-- end loader -->
-
+	
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -415,7 +411,7 @@
 		</div>
 	</div>
 	<!-- end footer -->
-
+	
 	<!-- scripts -->
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/materialize.min.js"></script>
