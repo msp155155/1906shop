@@ -27,3 +27,5 @@ Route::post('findpass','User\FindpassController@postFind');
 Route::get('resetpass','User\FindpassController@getReset');
 Route::post('resetpass','User\FindpassController@postReset');
 
+Route::get('/login', 'User\RegController@login');
+Route::post('/loginDo', 'User\RegController@loginDo');

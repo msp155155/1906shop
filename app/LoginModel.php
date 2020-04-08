@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class RegModel extends Model
+class LoginModel extends Model
 {
     //指定模型关联表
     protected $table = 'user';
