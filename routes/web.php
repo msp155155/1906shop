@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 Route::prefix('login')->group(function () {
     Route::get('/login', 'LoginController@login');
+    Route::get('/loginDo', 'LoginController@loginDo');
 });
