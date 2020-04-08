@@ -2,9 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27c203a7-bc27-4382-8078-2ab33197e43e" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/LoginModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/LoginModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/RegController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/RegModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/fakeLoader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/owl.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/owl.transitions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/blog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/blog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/blog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cart-menu1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cart-menu2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cart1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cart2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/image-profil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/parallax.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-new1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-new2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-new3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-new4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-top1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-top2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-top3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/product-top4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/shop-single.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slide1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slide2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/slide3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/testimonial1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/testimonial2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/testimonial3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/user-comment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/wishlist1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/wishlist2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/animatedModal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/contact-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/fakeLoader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.filterizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.filterizr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/portfolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,17 +82,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="549">
+              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/login/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/RegController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/login/index.html">
+        <entry file="file://$PROJECT_DIR$/app/Models/RegModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+            <state relative-caret-position="324">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -200,6 +279,20 @@
             <path>
               <item name="1906shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="1906shop" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1906shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1906shop" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1906shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1906shop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,18 +355,18 @@
       <option name="presentableId" value="Default" />
       <updated>1586228905188</updated>
       <workItem from="1586228908096" duration="9555000" />
-      <workItem from="1586301679247" duration="8513000" />
+      <workItem from="1586301679247" duration="9162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18068000" />
+    <option name="totallyTimeSpent" value="18717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18498659" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18498659" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,8 +422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="549">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -348,6 +441,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/RegController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/RegModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>

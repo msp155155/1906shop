@@ -16,7 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::prefix('login')->group(function () {
     Route::get('/login', 'LoginController@login');
     Route::get('/loginDo', 'LoginController@loginDo');
 });
+=======
+
+Route::get('reg','User\RegController@reg');
+Route::post('doreg','User\RegController@doreg');
+>>>>>>> 47fb6412a574eb90e785b111f3328e29fdc44a0d
