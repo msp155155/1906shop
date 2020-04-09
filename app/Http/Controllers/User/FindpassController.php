@@ -42,9 +42,9 @@ class FindpassController extends Controller
                 'url' => env('APP_URL') . '/resetpass?token=' . $token
             ];
             Mail::send('user.email',$url, function ($message) {
-//                 $to = Request()->get('email');
+                 $to = Request()->get('u');
 //                $to = '799877860@qq.com';
-                $to = '799877860@qq.com';
+//                $to = '799877860@qq.com';
                 // dd($to);
                 $message ->to($to)->subject('找回密码');
             });

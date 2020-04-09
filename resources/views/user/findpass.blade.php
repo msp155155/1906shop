@@ -374,9 +374,9 @@
                 <form class="col s12" method="post" action="{{url('findpass')}}">
                     {{ csrf_field() }}
                     <div class="input-field">
-                        <input type="text" class="validate" placeholder="EMAIL || NAME" name="u" required>
+                        <input type="text" class="validate" placeholder="注册时的邮箱" name="u" required>
                     </div>
-                    <button class="btn button-default">Send Email</button>
+                    <button class="btn button-default">发送邮件找回密码</button>
                 </form>
             </div>
         </div>
