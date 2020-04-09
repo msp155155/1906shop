@@ -44,10 +44,14 @@ class RegController extends Controller
         $info = $model -> all()->toArray();
         echo "<pre>";print_r($info);echo "</pre>";
     }
+
+
     public function login()
     {
         return view('user.login');
     }
+
+    
     public function loginDo(Request $request)
     {
 
