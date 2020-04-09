@@ -20,8 +20,8 @@ class FindpassController extends Controller
     public function postFind(Request $request)
     {
         $user_name = $request->input('u');
-        $u = RegModel::where(['name' => $user_name])
-            ->orwhere(['email' => $user_name])
+        $u = RegModel::where(['user_name' => $user_name])
+            ->orwhere(['user_email' => $user_name])
             ->first();
 
         // 找到用户发送重置密码邮件
@@ -42,7 +42,8 @@ class FindpassController extends Controller
                 'url' => env('APP_URL') . '/resetpass?token=' . $token
             ];
             Mail::send('user.email',$url, function ($message) {
-                // $to = Request()->get('email');
+//                 $to = Request()->get('email');
+//                $to = '799877860@qq.com';
                 $to = '799877860@qq.com';
                 // dd($to);
                 $message ->to($to)->subject('找回密码');
@@ -55,7 +56,7 @@ class FindpassController extends Controller
 
     public function getReset(Request $request)
     {
-        $token = $request->input('token');
+        $token =  $request->session()->get('user');
         if (empty($token))
         {
             die('未授权，缺少token');
@@ -72,41 +73,39 @@ class FindpassController extends Controller
     {
         $pass1 = $request->input('pass1');
         $pass2 = $request->input('pass2');
-        $token = $request->input('reset_token');
+        $token = $request->session()->get('user');
 
         if ($pass1 != $pass2)
         {
             die('两次密码输入不一致！！！');
         }
 
-        // 验证token是否使用与是否过期
-        $u = FindpassModel::where(['token' => $token])->orderBy('id','DESC')->first();
-        if (empty($u))
-        {
-            die('未授权，token无效');
-        }
-
-        // token是否过期，过期则终止
-        if ($u->expire < time())
-        {
-            die('token已过期');
-        }
-
-        if ($u->status==1)
-        {
-            die('token已失效');
-        }
+//        // 验证token是否使用与是否过期
+//        $u = FindpassModel::where(['token' => $token])->orderBy('id','DESC')->first();
+//        if (empty($u))
+//        {
+//            die('未授权，token无效');
+//        }
+//
+//        // token是否过期，过期则终止
+//        if ($u->expire < time())
+//        {
+//            die('token已过期');
+//        }
+//
+//        if ($u->status==1)
+//        {
+//            die('token已失效');
+//        }
 
         // 新密码使用hash加密
         $newPass = password_hash($pass1,PASSWORD_BCRYPT);
         echo $newPass;
 
         // 更新密码
-        $uid = $u->uid;
-        RegModel::where(['id' => $uid])->update(['pass' => $newPass]);
-
-        // 设置token为已使用
-        FindPassModel::where(['token' => $token])->update(['status' => 1]);
+        RegModel::where(['user_id' => $token])->update(['user_password' => $newPass]);
+//        // 设置token为已使用
+//        FindPassModel::where(['token' => $token])->update(['status' => 1]);
         echo "</br>";
         echo '密码更新成功';
     }

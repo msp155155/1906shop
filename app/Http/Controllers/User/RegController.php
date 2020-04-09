@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\RegModel;
 use phpDocumentor\Reflection\Location;
+use Illuminate\Support\Facades\Mail;
+
 
 class RegController extends Controller
 {
@@ -26,7 +28,17 @@ class RegController extends Controller
 
         // 入库
         $res = $model->insert($data);
-        echo "<script>alert('注册成功！');</script>";
+        if ($res){
+            Mail::send('user.regEmail', ['name' => $data['user_name']], function($message){
+                $to = [
+                    '799877860@qq.com'
+                ];
+                $message->to($to)->subject("注册成功");
+            });
+
+            echo "<script>alert('注册成功');location.href='login'</script>";
+        }
+
 
         // 用户列表
         $info = $model -> all()->toArray();
@@ -50,7 +62,7 @@ class RegController extends Controller
         }
         if ($res){
             session(['user'=>$user]);
-            echo "<script>alert('登陆成功'),location=''</script>";
+            echo "<script>alert('登陆成功'),location='loginIndex'</script>";
         }else{
             echo "<script>alert('登陆失败'),location='login'</script>";
         }

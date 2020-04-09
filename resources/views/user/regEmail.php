@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    密码重置链接已发送至 {{ $url }} ，该链接15分钟有效，请及时修改密码
+<div class="flex-center position-ref full-height">
+    {{$name}}，收到请回复
+    <br>
+</div>
 </body>
 </html>

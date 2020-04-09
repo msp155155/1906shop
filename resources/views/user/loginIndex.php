@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    密码重置链接已发送至 {{ $url }} ，该链接15分钟有效，请及时修改密码
+<a href="resetpass">重置密码</a>
 </body>
 </html>

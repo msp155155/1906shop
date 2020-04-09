@@ -26,6 +26,10 @@ Route::post('findpass','User\FindpassController@postFind');
 // 重置密码
 Route::get('resetpass','User\FindpassController@getReset');
 Route::post('resetpass','User\FindpassController@postReset');
-
+//登录
 Route::get('/login', 'User\RegController@login');
 Route::post('/loginDo', 'User\RegController@loginDo');
+//登录成功页面
+Route::get('/loginIndex', function () {
+    return view('user.loginIndex');
+});
