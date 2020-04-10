@@ -28,10 +28,11 @@ class RegController extends Controller
 
         // 入库
         $res = $model->insert($data);
+
         if ($res){
             Mail::send('user.regEmail', ['name' => $data['user_name']], function($message){
                 $to = [
-                    '799877860@qq.com'
+                    'msp155155@163.com'
                 ];
                 $message->to($to)->subject("注册成功");
             });

@@ -8,9 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    {{$name}}，收到请回复
-    <br>
-</div>
+    aaaa {{ $name }}，收到请回复;
 </body>
 </html>
